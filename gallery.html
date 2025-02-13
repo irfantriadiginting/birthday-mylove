@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Pacarakuuu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .slide {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .slide.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen text-center px-4">
+    <div class="container max-w-lg sm:max-w-2xl p-6 bg-white bg-opacity-80 shadow-lg rounded-lg">
+        <h1 class="text-2xl sm:text-3xl font-bold text-blue-600">Kenangan kita bersama sayanggg 💕</h1>
+        
+        <div class="mt-6 relative w-full max-w-sm sm:max-w-lg">
+            <img src="1.jpg" class="slide w-auto max-h-96 rounded-lg shadow-md">
+            <img src="2.jpg" class="slide w-auto max-h-96 rounded-lg shadow-md">
+            <img src="3.jpg" class="slide w-auto max-h-96 rounded-lg shadow-md">
+            <img src="4.jpg" class="slide w-auto max-h-96 rounded-lg shadow-md">
+            <img src="5.jpg" class="slide w-auto max-h-96 rounded-lg shadow-md">
+            <img src="6.jpg" class="slide w-auto max-h-96 rounded-lg shadow-md">
+            <img src="7.jpg" class="slide w-auto max-h-96 rounded-lg shadow-md">
+            <img src="8.jpg" class="slide w-auto max-h-96 rounded-lg shadow-md">
+            <img src="9.jpg" class="slide w-auto max-h-96 rounded-lg shadow-md">
+            <img src="10.jpg" class="slide w-auto max-h-96 rounded-lg shadow-md">
+        </div>
+
+        <button id="gallery-music-btn" class="mt-6 px-6 py-2 bg-green-500 text-white rounded-lg shadow-md hover:bg-green-700">Klik Musiknya 🎶</button>
+        
+        <a href="index.html" class="mt-6 inline-block px-6 py-2 bg-red-500 text-white rounded-lg shadow-md hover:bg-red-700">Balik ke halaman yang tadi 🏠</a>
+    </div>
+    <audio id="gallery-music" loop>
+        <source src="you.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
